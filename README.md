@@ -7,7 +7,12 @@
 	- Flags are additional specification that can be added to a command, they are usually in the form `-a`. Flags and other tools for a command can be usually found by running `COMMAND -help`
 
 - what is a wildcard and How to use Wildcards
-	- 
+	- `*` any string of any length
+	- `?` single character
+	- `(STRING)` matches a specific string
+	- `[CHARACTER/S]` matches any character or characters within the brackets
+	- `[^CHARACTER/S]` excludes any character or characters within the brackets
+	- `!WILDCARD` excludes the wildcard selected
 
 - how can you do Process Management
 	- launching a process requires typing the name of the process: `NAME_OF_PROCESS`
@@ -59,10 +64,18 @@
 	- Permissions can be changed by the administrator with `sudo chmod (+/-)FLAGS`
 
 - how to use head, tail, sort, nl (number line), wc (word count)
-	- 
+	- in all of the following examples, `FILE_NAME` can be substituted with `FILE_PATH/FILE_NAME`, `WILDCARD`, or `FILE_PATH/WILDCARD`
+	- `find FILE_NAME` returns a file matching the name, or a list of files maching the wildcard
+	- `cat FILE_NAME` prints to screen the contents of a file
+	- `head -NUMBER_OF_LINES FILE_NAME` selects (and/or prints) the first lines of a file
+	- `tail -NUMBER_OF_LINES FILE_NAME` selects (and/or prints) the last lines of a file
+	- `sort FILE_NAME` selects (and/or prints) the contents of a file in alphabetical order
+	- `head -NUMBER_OF_LINES FILE_NAME` prints the first lines of a file
+	- `nl FILE_NAME` prints the file with the lines preceded by a progressive number
+	- `wc FILE_NAME` prints the word count of a file
 
-- what is pipping and redirection, HINT > indicates to the command line
-	-
+- what are piping and redirection, HINT > indicates to the command line
+	- 
 
 - what is STDIN standard input and output
 	-
