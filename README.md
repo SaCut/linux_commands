@@ -39,20 +39,20 @@
 - what do 777, 400, 600, r, w, x mean?
 	- The the flags `+/-r`, `+/-w`, and `+/-x` stand for (add/remove) read permission, (add/remove) write permission, and (add/remove) execute permission.
 	- a table with the numerical meaning:
-|Octal Mode Number|Description|
-|--- |--- |
-|0400|Allows the owner to read|
-|0200|Allows the owner to write|
-|0100|Allows the owner to execute files and search in the directory|
-|0040|Allows group members to read|
-|0020|Allows group members to write|
-|0010|Allows group members to execute files and search in the directory|
-|0004|Allows everyone or the world to read|
-|0002|Allows everyone or the world to write|
-|0001|Allows everyone or the world to execute files and search in the directory|
-|1000|Sets the sticky bit|
-|2000|Sets the setgid bit|
-|4000|Sets the setuid bit|
+| Octal Mode Number | Description |
+| ----- | ------ |
+| 0400 | Allows the owner to read |
+| 0200 | Allows the owner to write |
+| 0100 | Allows the owner to execute files and search in the directory |
+| 0040 | Allows group members to read |
+| 0020 | Allows group members to write |
+| 0010 | Allows group members to execute files and search in the directory |
+| 0004 | Allows everyone or the world to read |
+| 0002 | Allows everyone or the world to write |
+| 0001 | Allows everyone or the world to execute files and search in the directory |
+| 1000 | Sets the sticky bit |
+| 2000 | Sets the setgid bit |
+| 4000 | Sets the setuid bit |
 
 - how to check permission for files/dir
 	- `ls -l NAME_OF_FILE`
