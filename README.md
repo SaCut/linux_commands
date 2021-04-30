@@ -51,9 +51,6 @@
 | 0004 | Allows everyone or the world to read |
 | 0002 | Allows everyone or the world to write |
 | 0001 | Allows everyone or the world to execute files and search in the directory |
-| 1000 | Sets the sticky bit |
-| 2000 | Sets the setgid bit |
-| 4000 | Sets the setuid bit |
 
 - how to check permission for files/dir
 	- `ls -l NAME_OF_FILE`
@@ -74,10 +71,13 @@
 	- `head -NUMBER_OF_LINES FILE_NAME` prints the first lines of a file
 	- `nl FILE_NAME` prints the file with the lines preceded by a progressive number
 	- `wc FILE_NAME` prints the word count of a file
+	- `sed "[options/options/options/options]"` allows for the substitution of strings, in files or outputs. 
 
 - what are piping and redirection, HINT > indicates to the command line
-	- 
+	- The pipe, `|`, tells the shell that we want to use the output of the command on the left as the input to the command on the right.
+	- To be more precise, pipes connect the `stdout` of one command to the `stdin` of the next.
+	- redirect, `>/>>` has the same function, but instead of passing the output to a command, it passes it to a file. The single version `>` overwrites the file contents, while the double version `>>` appends the output to the file
 
 - what is STDIN standard input and output
-	-
+	- `stdin` and `stdout` are the default input and output locations of the current session (and sessions in general). When a command with an output is run, the session trasmits it to `stdout`, and then from there to the screen. In a similar way, the session retrieves inputs from the `stdin` location.
 
